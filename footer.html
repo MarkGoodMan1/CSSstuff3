@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện Footer</title>
+    <!-- Icon FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .heading-section {
+            margin: 30px 0 10px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* ================= FOOTER 1 ================= */
+        .footer-1 {
+            background-color: #333333;
+            color: #cccccc;
+            padding: 40px 5% 30px;
+            border-top: 3px solid #e51a21;
+            position: relative;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-1-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        /* Cột 1 */
+        .f1-col-1 .logo-text {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 22px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .f1-col-1 .logo-text span {
+            color: #e51a21;
+        }
+
+        .f1-col-1 p {
+            color: #999999;
+            font-size: 13px;
+        }
+
+        /* Cột 2 & 3 Tiêu đề */
+        .f1-title {
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .f1-divider {
+            width: 40px;
+            height: 2px;
+            background-color: #666666;
+            margin-bottom: 20px;
+        }
+
+        /* Cột 2: Danh sách vật liệu */
+        .f1-col-2 ul {
+            list-style: none;
+        }
+
+        .f1-col-2 li {
+            padding: 8px 0;
+            border-bottom: 1px solid #444444;
+            color: #aaaaaa;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .f1-col-2 li:last-child {
+            border-bottom: none;
+        }
+
+        .f1-col-2 li:hover {
+            color: #ffffff;
+        }
+
+        .f1-col-2 li i {
+            font-size: 10px;
+            margin-right: 8px;
+        }
+
+        /* Cột 3: Liên hệ */
+        .f1-col-3 .company-name {
+            color: #ffffff;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .f1-contact-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: #aaaaaa;
+        }
+
+        .f1-contact-item i {
+            font-size: 16px;
+            width: 20px;
+        }
+
+        .f1-socials {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .f1-socials a {
+            color: #ffffff;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        /* Nút Cuộn Lên Top */
+        .scroll-top-btn {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 36px;
+            height: 36px;
+            background-color: #ffcc00;
+            color: #333333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        /* ================= FOOTER 2 ================= */
+        .footer-2 {
+            background-color: #333333;
+            color: #cccccc;
+            padding: 30px 5%;
+            border-top: 3px solid #e51a21;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .footer-2-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            gap: 30px;
+        }
+
+        .f2-col {
+            padding: 0 10px;
+        }
+
+        /* Đường vạch phân cách giữa các cột */
+        .f2-col:not(:last-child) {
+            border-right: 1px solid #444444;
+        }
+
+        /* Cột 1: Thông tin ban biên tập */
+        .f2-col-1 ul {
+            list-style: none;
+        }
+
+        .f2-col-1 li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 15px;
+            color: #aaaaaa;
+        }
+
+        .f2-col-1 li::before {
+            content: "•";
+            color: #e51a21;
+            font-size: 16px;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .f2-col-1 strong {
+            color: #ffffff;
+        }
+
+        /* Cột 2: Hợp tác quảng cáo */
+        .f2-col-2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .f2-col-2 h3 {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 15px;
+        }
+
+        .btn-ads {
+            background-color: #e51a21;
+            color: #ffffff;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 2px;
+            cursor: pointer;
+            font-size: 13px;
+            text-decoration: none;
+        }
+
+        /* Cột 3: Trụ sở */
+        .f2-col-3 h3 {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .f2-col-3 h3 i {
+            color: #e51a21;
+        }
+
+        .f2-col-3 p {
+            color: #aaaaaa;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .footer-1-container, .footer-2-container {
+                grid-template-columns: 1fr;
+                gap: 25px;
+            }
+            .f2-col:not(:last-child) {
+                border-right: none;
+                border-bottom: 1px solid #444444;
+                padding-bottom: 20px;
+            }
+            .f2-col-2 {
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2 class="heading-section">Footer 1</h2>
+    <!-- FOOTER 1 -->
+    <footer class="footer-1">
+        <div class="footer-1-container">
+            <!-- Cột 1 -->
+            <div class="f1-col-1">
+                <div class="logo-text">
+                    <i class="fa-solid fa-house-chimney" style="color: #e51a21;"></i>
+                    GOR<span>...</span>TV
+                </div>
+                <p>Với nét đẹp thân thiện và nhẹ nhàng của giấy, kết hợp cùng màu sắc trang nhã, hình ảnh gần gũi cùng font chữ nhẹ nhàng, cửa hàng In thiệp sẽ trao tận tay bạn những tấm thiệp cưới khiến bạn thật sự ưng ý.</p>
+            </div>
+
+            <!-- Cột 2 -->
+            <div class="f1-col-2">
+                <div class="f1-title">Vật Liệu Xây Dựng</div>
+                <div class="f1-divider"></div>
+                <ul>
+                    <li><i class="fa-solid fa-chevron-right"></i> Xi măng</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Cát, đá, sỏi</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Gạch xây</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Sắt, thép</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Gạch trang trí</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Sơn nước</li>
+                    <li><i class="fa-solid fa-chevron-right"></i> Vật tư phụ</li>
+                </ul>
+            </div>
+
+            <!-- Cột 3 -->
+            <div class="f1-col-3">
+                <div class="f1-title">Liên Hệ</div>
+                <div class="f1-divider"></div>
+                <div class="company-name">Công ty Vật Liệu Xây Dựng</div>
+                <div class="f1-contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Nguyen Hue, Quận 1, TP. HCM</span>
+                </div>
+                <div class="f1-contact-item">
+                    <i class="fa-solid fa-headset"></i>
+                    <span>(012) 345 xxx</span>
+                </div>
+                <div class="f1-contact-item">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>webdemo@gmail.com</span>
+                </div>
+                <div class="f1-socials">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <a href="#" class="scroll-top-btn"><i class="fa-solid fa-chevron-up"></i></a>
+    </footer>
+
+
+    <h2 class="heading-section">Footer 2</h2>
+    <!-- FOOTER 2 -->
+    <footer class="footer-2">
+        <div class="footer-2-container">
+            <!-- Cột 1 -->
+            <div class="f2-col f2-col-1">
+                <ul>
+                    <li><strong>Tổng biên tập:</strong> Nhà báo Nguyễn Thảo Lan</li>
+                    <li><strong>Phó tổng biên tập:</strong> Lâm Văn Huynh - Tô Tạo - Nguyễn Bánh</li>
+                    <li><strong>Giám đốc điều hành:</strong> Hà Huy Minh</li>
+                    <li><strong>Giấy phép số:</strong> 13/GP-BTTTT do Bộ Thông tin & Truyền Thông cấp ngày 11/05/2018</li>
+                </ul>
+            </div>
+
+            <!-- Cột 2 -->
+            <div class="f2-col f2-col-2">
+                <h3>Hợp tác quảng cáo</h3>
+                <a href="#" class="btn-ads">Báo giá quảng cáo</a>
+            </div>
+
+            <!-- Cột 3 -->
+            <div class="f2-col f2-col-3">
+                <h3><i class="fa-solid fa-location-dot"></i> TRỤ SỞ HÀ NỘI</h3>
+                <p>Tầng 1, tòa nhà Time Line, Số 3 Trần Hưng Đạo, Hà Nội</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

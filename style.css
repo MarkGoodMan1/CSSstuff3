@@ -1,0 +1,74 @@
+/* =======================================================
+   BƯỚC 3, 4, 5: ĐỊNH DẠNG THANH ĐIỀU HƯỚNG (NAV)
+======================================================= */
+
+/* Bước 4: Chuyển nav thành khối nội tuyến và rộng 80% */
+nav {
+    display: inline-block;
+    width: 80%;
+    background-color: #f8f9fa; /* Màu nền nhẹ để bạn dễ quan sát */
+    padding: 10px;
+    vertical-align: middle;
+}
+
+/* Bước 3: Nhận xét/định dạng li nằm trong nav (Biến menu dọc thành menu ngang) */
+nav ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block; /* Xếp các mục menu nằm ngang hàng nhau */
+    list-style: none;      /* Xóa bỏ dấu chấm tròn mặc định của thẻ li */
+    margin-left: 20px;     /* Tạo khoảng cách giữa các chữ menu */
+}
+
+/* Bước 5: Bộ chọn hậu duệ chỉnh ảnh (logo) nằm trong nav rộng 10% */
+nav img {
+    width: 10%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+/* =======================================================
+   BƯỚC 6, 7, 8: ĐỊNH DẠNG LỚP LƯỚI (GRID)
+======================================================= */
+
+/* Bước 6 & Bước 8: Tạo kiểu cho lớp lưới bắt đầu bằng dấu chấm */
+.grid-layout {
+    display: grid;
+    /* Bước 6: Tạo 2 cột, mỗi cột rộng xấp xỉ 40% */
+    grid-template-columns: 40% 40%; 
+    
+    /* Bước 8: Điều chỉnh vị trí theo yêu cầu ảnh mẫu */
+    justify-content: space-around; /* Căn chỉnh khoảng cách các cột theo chiều ngang */
+    align-items: start;            /* Căn chỉnh các phần tử theo chiều dọc từ trên xuống */
+    row-gap: 20px;                 /* Khoảng cách giữa hàng trên và hàng dưới */
+}
+
+/* Bước 7: Bộ chọn hậu duệ chỉnh hình ảnh trong lớp lưới rộng 100% */
+.grid-layout img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* =======================================================
+   BƯỚC 9: ĐỊNH DẠNG LỚP FLEXBOX
+======================================================= */
+
+/* Bước 9: Tạo kiểu cho lớp flex sử dụng flex-wrap và justify-content */
+.flex-layout {
+    display: flex;
+    flex-wrap: wrap;               /* Tự động xuống hàng khi không đủ chỗ */
+    justify-content: space-around; /* Căn đều các phần tử con */
+}
+
+/* Định dạng thêm một chút cho thẻ con để giao diện dễ nhìn */
+.dish-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}

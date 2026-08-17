@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Món Ăn Truyền Thống Việt Nam</title>
+    <!-- Liên kết tới file CSS của bạn (ví dụ: style.css) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Bước 2: Liên kết skip to main content -->
+    <a href="#main-content" class="skip-link">Chuyển đến nội dung chính</a>
+
+    <!-- Thanh điều hướng chứa Logo và Menu (Chuẩn bị cho Bước 3, 4, 5) -->
+    <header>
+        <nav>
+            <!-- Ảnh logo nằm trong điều hướng (Bước 5) -->
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=100" alt="Logo Ẩm Thực">
+            
+            <!-- Danh sách menu (Bước 3) -->
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Món Phở</a></li>
+                <li><a href="#">Món Bún</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Thẻ main chứa nội dung chính -->
+    <main id="main-content">
+        <!-- Tiêu đề lớn chính của trang -->
+        <h1>Khám Phá Món Ăn Truyền Thống Việt Nam</h1>
+
+        <!-- Nhóm món ăn thứ nhất -->
+        <h2>Phở</h2>
+
+        <!-- Khung bọc Grid để chia 2 cột cho Phở Bò và Phở Gà (Chuẩn bị cho Bước 6, 7, 8) -->
+        <div class="grid-layout">
+            
+            <div class="dish-card">
+                <h3>Phở Bò</h3>
+                <ul>
+                    <li>Giá cả: 40.000đ - 75.000đ</li>
+                    <li>Thành phần: Bánh phở, thịt bò (tái, chín, nạm, gầu), nước dùng thanh ngọt từ xương ống.</li>
+                    <li>Đặc sản vùng: Hà Nội (Phở Bắc)</li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?w=300" alt="Phở Bò truyền thống">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="dish-card">
+                <h3>Phở Gà</h3>
+                <ul>
+                    <li>Giá cả: 35.000đ - 60.000đ</li>
+                    <li>Thành phần: Bánh phở, thịt gà xé phay, lá chanh thái sợi, nước dùng thanh trong.</li>
+                    <li>Đặc sản vùng: Miền Bắc</li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1625398407796-82650a8c135f?w=300" alt="Bát Phở Gà thơm ngon">
+                    </li>
+                </ul>
+            </div>
+
+        </div> <!-- Kết thúc grid-layout -->
+
+
+        <!-- Nhóm món ăn thứ hai -->
+        <h2>Bún</h2>
+
+        <!-- Khung bọc Flexbox (Chuẩn bị cho Bước 9) -->
+        <div class="flex-layout">
+            
+            <div class="dish-card">
+                <h3>Bún Chả</h3>
+                <ul>
+                    <li>Giá cả: 40.000đ - 60.000đ</li>
+                    <li>Thành phần: Bún rối, chả băm, chả miếng nướng than hoa, nước chấm chua ngọt kèm đu đủ xanh.</li>
+                    <li>Đặc sản vùng: Hà Nội</li>
+                    <li>
+                        <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=300" alt="Mẹt Bún Chả Hà Nội">
+                    </li>
+                </ul>
+            </div>
+
+        </div> <!-- Kết thúc flex-layout -->
+
+    </main>
+
+</body>
+</html>
